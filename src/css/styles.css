@@ -22,6 +22,7 @@ NAVIGATION
   width: 100%;
   top: 0;
   justify-content: space-between;
+  align-items: center;
   background: #FEFEFE;
   font-variant: small-caps; }
   .navigation h3 {
@@ -34,6 +35,20 @@ NAVIGATION
       .navigation ul li a {
         color: #000000;
         text-decoration: none; }
+  @media (max-width: 468px) {
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      .navigation h3 {
+        margin: 0 auto;
+        margin-top: .5rem;
+        margin-bottom: .5rem; }
+      .navigation ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: .5rem; } }
 
 /************************************************
 MAIN
@@ -74,6 +89,22 @@ MAIN
     border-top: 1px solid rgba(0, 0, 0, 0.0975); }
     .main-page .center-text .tagline {
       width: 55%; }
+  @media (max-width: 468px) {
+    .main-page {
+      flex-direction: column; }
+      .main-page .main-title {
+        width: 100%;
+        height: 30%;
+        font-size: 2rem; }
+      .main-page .center-text {
+        height: 30%;
+        padding: 0;
+        font-size: 1.25rem; }
+        .main-page .center-text .tagline {
+          display: flex;
+          width: 100%;
+          height: auto;
+          margin: 1rem auto; } }
 
 /************************************************
 SIDE BY SIDE
@@ -101,9 +132,22 @@ SIDE BY SIDE
     flex-direction: column;
     justify-content: center;
     align-content: center; }
+  @media (max-width: 468px) {
+    .side-by-side {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0; }
+      .side-by-side .side-by-side-image {
+        width: 100%;
+        height: 40%; }
+      .side-by-side .side-by-side-text {
+        width: 95%;
+        height: 100%;
+        padding: .25rem; } }
 
 /************************************************
-SIDE BY SIDE
+SERVICES
 ************************************************/
 .services-main {
   height: 35%;
@@ -126,6 +170,10 @@ SIDE BY SIDE
     letter-spacing: .5rem; }
   .services-main h2 {
     margin: 0; }
+  @media (max-width: 468px) {
+    .services-main {
+      height: 30%;
+      font-size: 2rem; } }
 
 .services {
   width: 100%;
@@ -137,23 +185,21 @@ SIDE BY SIDE
     margin-right: 1.5rem; }
   .services .column-2 {
     margin-left: 1.5rem; }
-  .services ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-    .services ul li {
-      margin: .5rem 0; }
+  @media (max-width: 468px) {
+    .services {
+      display: flex;
+      flex-direction: column; }
+      .services .column-1 {
+        margin: 0; }
+      .services .column-2 {
+        margin: 0; } }
 
-/************************************************
-FOOTER
-************************************************/
-.footer {
-  height: auto;
-  font-size: .75rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.0975); }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul li {
+    margin: .5rem 0; }
 
 /************************************************
 CONTACT
@@ -175,6 +221,10 @@ CONTACT
   background-repeat: no-repeat;
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.0975); }
+  @media (max-width: 468px) {
+    .contact-main {
+      height: 30%;
+      font-size: 2rem; } }
 
 .contact {
   width: 100%;
@@ -215,3 +265,33 @@ CONTACT
     display: flex;
     flex-direction: column;
     justify-content: center; }
+  @media (max-width: 468px) {
+    .contact {
+      display: flex;
+      flex-direction: column; }
+      .contact .contact-column {
+        width: 100%;
+        height: 31%; }
+        .contact .contact-column img {
+          margin: 0;
+          width: 15%;
+          height: 30%; }
+      .contact .address {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.0975); }
+      .contact .phone {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.0975); }
+      .contact .email {
+        width: 100%; } }
+
+/************************************************
+FOOTER
+************************************************/
+.footer {
+  height: auto;
+  font-size: .75rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.0975); }
