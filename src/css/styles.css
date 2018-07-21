@@ -4,8 +4,7 @@ MAIN
 html, body, #root, .App {
   height: 100%;
   width: 100%;
-  font-size: 16px;
-  font-family: "Lato";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #17252A;
   display: flex;
   flex-direction: column;
@@ -25,6 +24,8 @@ NAVIGATION
   align-items: center;
   background: #FEFEFE;
   font-variant: small-caps; }
+  .navigation nav {
+    width: 100%; }
   .navigation h3 {
     margin-left: .5rem; }
   .navigation ul {
@@ -56,7 +57,9 @@ MAIN
 .main-page {
   height: 100%;
   width: 100%; }
-  .main-page .main-title {
+  .main-page .cheers {
+    font-style: italic; }
+  .main-page .main-photo {
     height: 60%;
     width: 100%;
     font-size: 5rem;
@@ -65,15 +68,12 @@ MAIN
     justify-content: center;
     align-content: center;
     align-items: center;
-    font-family: "Playfair Display";
     color: #FEFEFE;
     background-image: url(/img/scissors-and-coffee.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative; }
-    .main-page .main-title h2 {
-      margin: 0; }
   .main-page .center-text {
     width: 95%;
     height: 20%;
@@ -92,7 +92,7 @@ MAIN
   @media (max-width: 468px) {
     .main-page {
       flex-direction: column; }
-      .main-page .main-title {
+      .main-page .main-photo {
         width: 100%;
         height: 30%;
         font-size: 2rem; }
@@ -158,7 +158,6 @@ SERVICES
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-family: "Playfair Display";
   color: #FEFEFE;
   background-image: url(/img/services.jpg);
   background-size: cover;
@@ -213,7 +212,6 @@ CONTACT
   justify-content: center;
   align-content: center;
   align-items: center;
-  font-family: "Playfair Display";
   color: #FEFEFE;
   background-image: url(/img/contact.jpg);
   background-size: cover;

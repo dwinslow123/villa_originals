@@ -1,16 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
 
-export const Navigation = () => {
-  return (
-    <div className="navigation">
-      <h3>Villa Originals</h3>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </div>
-  );
+
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink } from 'reactstrap';
+
+class Navigation extends Component {
+  state = {
+    isOpen: false,
+  };
+
+  toggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  render() {
+    return (
+      <div className="navigation">
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">Villa Originals</NavbarBrand>
+          <NavbarToggler onClick={ this.toggle } />
+          <Collapse isOpen={ this.state.isOpen } navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/services">Services</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/contact">Contact</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
+export default Navigation;
