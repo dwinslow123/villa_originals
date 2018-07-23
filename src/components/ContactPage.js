@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col, Jumbotron } from 'reactstrap';
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Jumbotron } from 'reactstrap';
 
 import '../css/styles.css';
 
@@ -18,25 +23,25 @@ class ContactPage extends Component {
       <div>
           <Jumbotron fluid>
             <Container fluid>
-              <h1 className="display-4">Contact</h1>
+              <h1 className="display-4 text-center">Contact</h1>
             </Container>
           </Jumbotron>
           <Row className="contact">
-            <Col xs="auto" className="contact-column">
+            <Col sm="3" className="contact-column">
               <img src="/img/map-marker.svg" alt="map-icon" />
-              <p className="lead">We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address></p>
+              <p className="lead text-center">We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address></p>
             </Col>
             <span className="border"></span>
-            <Col xs="auto" className="contact-column">
+            <Col sm="3" className="contact-column">
               <img src="/img/phone.svg" alt="phone-icon" />
-              <p>
-                You can call us here: <a href="tel:630-833-6777">(630) 833-6777</a>
+              <p className="lead text-center">
+                You can call us here:<br/><a href="tel:630-833-6777">(630) 833-6777</a>
               </p>
             </Col>
-            <Col xs="auto" className="contact-column">
+            <Col sm="3" className="contact-column text-center">
             <img src="/img/envelope-closed.svg" alt="email-icon" />
               <form method="post" action="mailto:dwinslow123@me.com">
-                <p>Or just send us an email!</p>
+                <p className="lead text-center">Or just send us an email!</p>
                 <Button
                   type="submit"
                   value="Send Email"

@@ -1,7 +1,11 @@
 /************************************************
 MAIN
 ************************************************/
-html, body, #root, .App {
+html {
+  height: 100%;
+  width: 100%; }
+
+body, #root {
   height: 100%;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10,6 +14,9 @@ html, body, #root, .App {
   flex-direction: column;
   margin: 0;
   background: #FEFEFE; }
+
+.App {
+  height: 100%; }
 
 /************************************************
 NAVIGATION
@@ -56,39 +63,14 @@ MAIN
 ************************************************/
 .main-page {
   height: 100%;
-  width: 100%; }
+  min-width: 100%;
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative; }
   .main-page .cheers {
     font-style: italic; }
-  .main-page .main-photo {
-    height: 60%;
-    width: 100%;
-    font-size: 5rem;
-    text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: #FEFEFE;
-    background-image: url(/img/scissors-and-coffee.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative; }
-  .main-page .center-text {
-    width: 95%;
-    height: 20%;
-    padding: .5rem;
-    margin: 0 auto;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background: #FEFEFE;
-    font-size: 1.5rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.0975); }
-    .main-page .center-text .tagline {
-      width: 55%; }
   @media (max-width: 468px) {
     .main-page {
       flex-direction: column; }
@@ -150,29 +132,19 @@ SIDE BY SIDE
 SERVICES
 ************************************************/
 .services-main {
-  height: 35%;
-  width: 100%;
-  font-size: 3rem;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  color: #FEFEFE;
-  background-image: url(/img/services.jpg);
+  height: 100%;
+  min-width: 100%;
+  background-image: url(/img/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975); }
-  .services-main .services-span {
-    letter-spacing: .5rem; }
-  .services-main h2 {
-    margin: 0; }
-  @media (max-width: 468px) {
-    .services-main {
-      height: 30%;
-      font-size: 2rem; } }
+  position: relative; }
+
+.services-span {
+  letter-spacing: .5rem; }
+
+h2 {
+  margin: 0; }
 
 .services {
   width: 100%;
@@ -288,8 +260,8 @@ FOOTER
 ************************************************/
 .footer {
   height: auto;
+  color: #3AAFA9;
   font-size: .75rem;
   display: flex;
   justify-content: center;
-  align-content: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.0975); }
+  align-content: center; }

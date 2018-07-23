@@ -24,7 +24,7 @@ class Navigation extends Component {
   render() {
     return (
       <div className="navigation">
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand href="/">Villa Originals</NavbarBrand>
           <NavbarToggler onClick={ this.toggle } />
           <Collapse isOpen={ this.state.isOpen } navbar>
