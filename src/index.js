@@ -8,6 +8,7 @@ import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import Navigation from './components/Navigation';
 import { Footer } from './components/Footer';
+import Portfolio from './components/Portfolio';
 
 
 ReactDOM.render(
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Route exact path="/" component={ App } />
         <Route path="/services" component={ ServicesPage } />
         <Route path="/contact" component={ ContactPage } />
+        <Route path="/portfolio" component={ Portfolio } />
         <Footer />
       </div>
     </Router>,

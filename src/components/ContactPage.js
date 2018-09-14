@@ -20,7 +20,7 @@ class ContactPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="contact-main">
           <Jumbotron fluid>
             <Container fluid>
               <h1 className="display-4 text-center">Contact</h1>
@@ -29,9 +29,10 @@ class ContactPage extends Component {
           <Row className="contact">
             <Col sm="3" className="contact-column">
               <img src="/img/map-marker.svg" alt="map-icon" />
-              <p className="lead text-center">We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address></p>
+              <p className="lead text-center">
+                We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
+              </p>
             </Col>
-            <span className="border"></span>
             <Col sm="3" className="contact-column">
               <img src="/img/phone.svg" alt="phone-icon" />
               <p className="lead text-center">
