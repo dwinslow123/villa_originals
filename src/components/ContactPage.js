@@ -4,6 +4,10 @@ import {
   Container,
   Row,
   Col,
+  Card,
+  CardImg,
+  CardBody,
+  CardText,
   Jumbotron } from 'reactstrap';
 
 import '../css/styles.css';
@@ -28,10 +32,12 @@ class ContactPage extends Component {
           </Jumbotron>
           <Row className="contact">
             <Col sm="3" className="contact-column">
-              <img src="/img/map-marker.svg" alt="map-icon" />
-              <p className="lead text-center">
-                We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
-              </p>
+              <Card>
+                <CardImg top src="/img/map-marker.svg" alt="map-icon" />
+                <p className="lead text-center">
+                  We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
+                </p>
+              </Card>
             </Col>
             <Col sm="3" className="contact-column">
               <img src="/img/phone.svg" alt="phone-icon" />
