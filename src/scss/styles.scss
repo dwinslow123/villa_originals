@@ -11,6 +11,7 @@ $font-family-sans-serif:
   "Helvetica Neue", Arial, sans-serif,
   // Emoji fonts
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
 $header-font: "Playfair Display";
 $text-font: "Lato";
 $main-font-size: 16px;
@@ -263,14 +264,10 @@ CONTACT
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   .jumbotron {
     width: 100%;
-  }
+  }// contact-main jumbotron
 }// contact-main
 
 .contact {
@@ -299,7 +296,16 @@ CONTACT
   a {
     text-decoration: none;
     color: $link-color;
-  }
+  }// contact a
+
+  .contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+  }// contact-card
 
   .address {
     border-right: 1px solid rgba(0,0,0,0.0975);
@@ -346,7 +352,7 @@ CONTACT
         margin: 0;
         width: 15%;
         height: 30%;
-      }
+      }// contact-column img
     }// mobile contact-column
 
     .address {
@@ -361,10 +367,18 @@ CONTACT
 
     .email {
       width: 100%;
-    }
+    }// contact mobile email
   }// mobile 
 }// contact
 
+
+/************************************************
+PORTFOLIO
+************************************************/
+
+.portfolio-main {
+  height: 100%;
+}// portfolio-main
 
 /************************************************
 FOOTER

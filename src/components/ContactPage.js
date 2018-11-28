@@ -6,8 +6,6 @@ import {
   Col,
   Card,
   CardImg,
-  CardBody,
-  CardText,
   Jumbotron } from 'reactstrap';
 
 import '../css/styles.css';
@@ -32,7 +30,7 @@ class ContactPage extends Component {
           </Jumbotron>
           <Row className="contact">
             <Col sm="3" className="contact-column">
-              <Card>
+              <Card className="contact-card">
                 <CardImg top src="/img/map-marker.svg" alt="map-icon" />
                 <p className="lead text-center">
                   We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
@@ -40,23 +38,27 @@ class ContactPage extends Component {
               </Card>
             </Col>
             <Col sm="3" className="contact-column">
-              <img src="/img/phone.svg" alt="phone-icon" />
-              <p className="lead text-center">
-                You can call us here:<br/><a href="tel:630-833-6777">(630) 833-6777</a>
-              </p>
+              <Card className="contact-card">
+                <img src="/img/phone.svg" alt="phone-icon" />
+                <p className="lead text-center">
+                  You can call us here:<br/><a href="tel:630-833-6777">(630) 833-6777</a>
+                </p>
+              </Card>
             </Col>
             <Col sm="3" className="contact-column text-center">
-            <img src="/img/envelope-closed.svg" alt="email-icon" />
-              <form method="post" action="mailto:dwinslow123@me.com">
-                <p className="lead text-center">Or just send us an email!</p>
-                <Button
-                  type="submit"
-                  value="Send Email"
-                  color="info"
-                >
-                  Let us know!
-                </Button>
-              </form>
+              <Card className="contact-card">
+                <img src="/img/envelope-closed.svg" alt="email-icon" />
+                <form method="post" action="mailto:dwinslow123@me.com">
+                  <p className="lead text-center">Or just send us an email!</p>
+                  <Button
+                    type="submit"
+                    value="Send Email"
+                    color="info"
+                  >
+                    Let us know!
+                  </Button>
+                </form>
+              </Card>
             </Col>
           </Row>
       </div>

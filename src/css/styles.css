@@ -172,11 +172,7 @@ CONTACT
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  position: relative; }
   .contact-main .jumbotron {
     width: 100%; }
 
@@ -201,6 +197,13 @@ CONTACT
   .contact a {
     text-decoration: none;
     color: #000000; }
+  .contact .contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.8); }
   .contact .address {
     border-right: 1px solid rgba(0, 0, 0, 0.0975); }
     .contact .address p {
@@ -238,6 +241,12 @@ CONTACT
         border-bottom: 1px solid rgba(0, 0, 0, 0.0975); }
       .contact .email {
         width: 100%; } }
+
+/************************************************
+PORTFOLIO
+************************************************/
+.portfolio-main {
+  height: 100%; }
 
 /************************************************
 FOOTER
