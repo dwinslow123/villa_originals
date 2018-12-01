@@ -84,7 +84,8 @@ MAIN
     margin: 0; }
     @media (max-width: 468px) {
       .main-page .main-jumbo {
-        height: 100%; } }
+        height: 100%;
+        overflow-x: scroll; } }
 
 /***********************************************
 SIDE BY SIDE
@@ -154,6 +155,9 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 468px) {
+    .services {
+      overflow-x: scroll; } }
   .services .services-list {
     height: 100%;
     display: flex;
@@ -261,6 +265,14 @@ PORTFOLIO
 ************************************************/
 .main-gallery {
   text-align: center; }
+  @media (max-width: 468px) {
+    .main-gallery {
+      height: 100%;
+      background: #000000; }
+      .main-gallery img {
+        margin-top: 4rem;
+        max-width: 100%;
+        max-height: 100%; } }
 
 /************************************************
 FOOTER
