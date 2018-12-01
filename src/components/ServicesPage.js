@@ -13,36 +13,28 @@ class ServicesPage extends Component {
   render() {
     return (
       <div className="services-main">
-      <Jumbotron fluid>
-        <Container fluid>
-          <h1 className="display-3 text-center">Services</h1>
+        <Container className="services">
+          <h1 className="text-center">Service Menu</h1>
+          <Row className="services-list">
+            <Col lg="5">
+            <ListGroup className="text-center">
+              <ListGroupItem>Haircut with blowdry - ($22 - $24)</ListGroupItem>
+              <ListGroupItem>Haircut with blowdry and curl - $42</ListGroupItem>
+              <ListGroupItem>Kid's cut - $12</ListGroupItem>
+              <ListGroupItem>Kid's cut with blowdry and curl - $20</ListGroupItem>
+              <ListGroupItem>Roller Set - $18</ListGroupItem>
+              <ListGroupItem>Color* - $45</ListGroupItem>
+              <ListGroupItem>Bleach* $60</ListGroupItem>
+              <ListGroupItem>Highlights (foil or cap)* - $45</ListGroupItem>
+              <ListGroupItem>Perms - $70</ListGroupItem>
+              <ListGroupItem>Updo's and Formals - $40</ListGroupItem>
+              <ListGroupItem>Facial Waxing - $10</ListGroupItem>
+              <ListGroupItem>And much more!</ListGroupItem>
+            </ListGroup>
+            </Col>
+          </Row>
+          <p>* cut not included. All prices are starting points.</p>
         </Container>
-      </Jumbotron>
-      <Container>
-        <Row>
-          <Col lg="6">
-          <ListGroup className="text-center">
-            <ListGroupItem>Haircut with blowdry - ($22 - $24)</ListGroupItem>
-            <ListGroupItem>Haircut with blowdry and curl - $42</ListGroupItem>
-            <ListGroupItem>Kid's cut - $12</ListGroupItem>
-            <ListGroupItem>Kid's cut with blowdry and curl - $20</ListGroupItem>
-            <ListGroupItem>Roller Set - $18</ListGroupItem>
-            <ListGroupItem>Color* - $45 and up</ListGroupItem>
-          </ListGroup>
-          </Col>
-          <Col lg="6">
-          <ListGroup className="text-center">
-            <ListGroupItem>Bleach* $60 and up</ListGroupItem>
-            <ListGroupItem>Highlights (foil or cap)* - $45 and up</ListGroupItem>
-            <ListGroupItem>Perms - $70 and up</ListGroupItem>
-            <ListGroupItem>Updo's and Formals - $40 and up</ListGroupItem>
-            <ListGroupItem>Facial Waxing - $10 and up</ListGroupItem>
-            <ListGroupItem>And much more!</ListGroupItem>
-          </ListGroup>
-          </Col>
-        </Row>
-        <p>* cut not included</p>
-      </Container>
       </div>
     );
   }

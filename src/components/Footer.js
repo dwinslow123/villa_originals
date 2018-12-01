@@ -11,7 +11,7 @@ library.add(faFacebook, faInstagram);
 export const Footer = () => {
   return (
     <Navbar color="dark" className="footer">
-      <Nav className="ml-auto">
+      <Nav>
       <NavItem>
       <a className="social-logo" href="https://facebook.com/villa_originals">
         <FontAwesomeIcon
