@@ -121,7 +121,7 @@ MAIN
   height: 100%;
   width: 100%;
   background-image: url(/img/background3.jpg);
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
@@ -395,9 +395,9 @@ CONTACT
 PORTFOLIO
 ************************************************/
 
-.portfolio-main {
-  height: 100%;
-}// portfolio-main
+.main-gallery {
+  text-align: center;
+}
 
 /************************************************
 FOOTER
