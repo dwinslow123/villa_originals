@@ -78,7 +78,7 @@ MAIN
   .main-page .cheers {
     font-style: italic; }
   .main-page .main-jumbo {
-    height: 40%;
+    height: auto;
     width: 100%;
     background-color: rgba(233, 236, 239, 0.885);
     margin: 0; }
@@ -149,8 +149,8 @@ h2 {
 
 .services {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
-  width: 100%;
+  border: 1.5px solid #000000;
+  width: 50%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -159,7 +159,8 @@ h2 {
     .services {
       overflow-x: scroll; } }
   .services .services-list {
-    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -264,7 +265,8 @@ CONTACT
 PORTFOLIO
 ************************************************/
 .main-gallery {
-  text-align: center; }
+  text-align: center;
+  min-height: 100%; }
   @media (max-width: 468px) {
     .main-gallery {
       height: 100%;
