@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import {
   Button,
-  Container,
   Row,
   Col,
   Card,
-  CardImg,
-  Jumbotron } from 'reactstrap';
+  CardImg, } from 'reactstrap';
 
 import '../css/styles.css';
 
@@ -23,11 +21,6 @@ class ContactPage extends Component {
   render() {
     return (
       <div className="contact-main">
-          <Jumbotron fluid>
-            <Container fluid>
-              <h1 className="display-4 text-center">Contact</h1>
-            </Container>
-          </Jumbotron>
           <Row className="contact">
             <Col sm="3" className="contact-column">
               <Card className="contact-card">

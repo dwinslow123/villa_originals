@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {
-  Jumbotron,
   Container,
   Col,
   Row,
@@ -16,7 +15,7 @@ class ServicesPage extends Component {
         <Container className="services">
           <h1 className="text-center">Service Menu</h1>
           <Row className="services-list">
-            <Col lg="5">
+            <Col lg="8">
             <ListGroup className="text-center">
               <ListGroupItem>Haircut with blowdry - ($22 - $24)</ListGroupItem>
               <ListGroupItem>Haircut with blowdry and curl - $42</ListGroupItem>

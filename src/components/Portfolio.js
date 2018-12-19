@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { gallery } from './gallery';
 
 import {
-  Container,
   Carousel,
   CarouselItem,
   CarouselControl,

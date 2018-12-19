@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const gallery = [
   {
     src: "img/gallery1.jpg",
