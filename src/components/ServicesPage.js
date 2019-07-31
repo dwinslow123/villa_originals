@@ -24,7 +24,7 @@ class ServicesPage extends Component {
               <ListGroupItem>Kid's cut with blowdry and curl - $20</ListGroupItem>
               <ListGroupItem>Roller Set - $20</ListGroupItem>
               <ListGroupItem>Color* - $46-$52</ListGroupItem>
-              <ListGroupItem>Bleach* $80+</ListGroupItem>
+              <ListGroupItem>Bleach* - $80+</ListGroupItem>
               <ListGroupItem>Highlights (foil or cap)* - $45</ListGroupItem>
               <ListGroupItem>Perms - $72+ ($82 with curl)</ListGroupItem>
               <ListGroupItem>Updo's and Formals - $45</ListGroupItem>
