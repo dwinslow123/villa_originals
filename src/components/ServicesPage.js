@@ -17,16 +17,17 @@ class ServicesPage extends Component {
           <Row className="services-list">
             <Col lg="8">
             <ListGroup className="text-center">
-              <ListGroupItem>Haircut with blowdry - ($22 - $24)</ListGroupItem>
-              <ListGroupItem>Haircut with blowdry and curl - $42</ListGroupItem>
-              <ListGroupItem>Kid's cut - $12</ListGroupItem>
+              <ListGroupItem>Haircut with blowdry - ($22)</ListGroupItem>
+              <ListGroupItem>Haircut with blowdry and curl - $25+</ListGroupItem>
+              <ListGroupItem>Ion Color - $46<br/>Any other color - $52 (Redken etc...)</ListGroupItem>
+              <ListGroupItem>Kid's cut - $14</ListGroupItem>
               <ListGroupItem>Kid's cut with blowdry and curl - $20</ListGroupItem>
-              <ListGroupItem>Roller Set - $18</ListGroupItem>
-              <ListGroupItem>Color* - $45</ListGroupItem>
-              <ListGroupItem>Bleach* $60</ListGroupItem>
+              <ListGroupItem>Roller Set - $20</ListGroupItem>
+              <ListGroupItem>Color* - $46-$52</ListGroupItem>
+              <ListGroupItem>Bleach* $80+</ListGroupItem>
               <ListGroupItem>Highlights (foil or cap)* - $45</ListGroupItem>
-              <ListGroupItem>Perms - $70</ListGroupItem>
-              <ListGroupItem>Updo's and Formals - $40</ListGroupItem>
+              <ListGroupItem>Perms - $72+ ($82 with curl)</ListGroupItem>
+              <ListGroupItem>Updo's and Formals - $45</ListGroupItem>
               <ListGroupItem>Facial Waxing - $10</ListGroupItem>
               <ListGroupItem>And much more!</ListGroupItem>
             </ListGroup>
