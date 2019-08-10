@@ -17,8 +17,8 @@ class ServicesPage extends Component {
           <Row className="services-list">
             <Col lg="8">
             <ListGroup className="text-center">
-              <ListGroupItem>Haircut with blowdry - ($22)</ListGroupItem>
-              <ListGroupItem>Haircut with blowdry and curl - $25+</ListGroupItem>
+              <ListGroupItem>Haircut with blowdry - ($22 - $25)</ListGroupItem>
+              <ListGroupItem>Haircut with blowdry and curl - $44+</ListGroupItem>
               <ListGroupItem>Ion Color - $46<br/>Any other color - $52 (Redken etc...)</ListGroupItem>
               <ListGroupItem>Kid's cut - $14</ListGroupItem>
               <ListGroupItem>Kid's cut with blowdry and curl - $20</ListGroupItem>
