@@ -38,6 +38,11 @@ html {
   width: 100%;
 }
 
+.main-app {
+  width: 100%;
+  height: 100%;
+}
+
 body, #root {
   height: 100%;
   width: 100%;
@@ -135,7 +140,7 @@ MAIN
   }
 
   .main-jumbo {
-    height: auto;
+    height: 50%;
     width: 100%;
     background-color: rgba(233, 236, 239, 0.885);
     margin: 0;
@@ -284,120 +289,10 @@ CONTACT
 ************************************************/
 
 .contact-main {
-  height: 100%;
-  width: 100%;
-  // background-image: url(/img/background.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-
-  .jumbotron {
-    width: 100%;
-  }// contact-main jumbotron
-}// contact-main
-
-.contact {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .contact-column {
-    width: 31%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      margin-bottom: 5rem;
-      width: 30%;
-      height: 15%;
-    }// contact contact-column img
-  }// contact contact-column
-
-  a {
-    text-decoration: none;
-    color: $link-color;
-  }// contact a
-
-  .contact-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: .5rem;
-    background-color: rgba(255, 255, 255, 0.8);
-  }// contact-card
-
-  .address {
-    border-right: 1px solid rgba(0,0,0,0.0975);
-
-    p {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }// contact address p
-  }// contact address
-
-  .phone {
-    border-right: 1px solid rgba(0,0,0,0.0975);
-
-    p {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }// contact phone p
-  }// contact phone
-
-  .email {
-    
-    img {
-      width: 20%;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }// contact email form
-  }// contact email
-
-  @include media($mobile) {
-    display: flex;
-    flex-direction: column;
-
-    .contact-column {
-      width: 100%;
-      height: 31%;
-
-      img {
-        margin: 0;
-        width: 15%;
-        height: 30%;
-      }// contact-column img
-    }// mobile contact-column
-
-    .address {
-      width: 100%;
-      border-bottom: 1px solid rgba(0,0,0,0.0975);
-    }// mobile address
-
-    .phone {
-      width: 100%;
-      border-bottom: 1px solid rgba(0,0,0,0.0975);
-    }// mobile phone
-
-    .email {
-      width: 100%;
-    }// contact mobile email
-  }// mobile 
-}// contact
-
+  display: block;
+  height: 40%;
+  background: #fff;
+}
 
 /************************************************
 PORTFOLIO
@@ -432,5 +327,9 @@ FOOTER
     height: 4rem;
     margin: 0 1.25rem;
   }// footer social-logo
+
+  .social-logo:hover {
+    opacity: 0.5;
+  }
 }// footer
 

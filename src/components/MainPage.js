@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import ContactPage from './ContactPage';
 import '../css/styles.css';
 
-import { Jumbotron, Container } from 'reactstrap';
+import {
+  Jumbotron,
+  Container,
+  Button,
+  Row,
+  Col,
+  Card } from 'reactstrap';
 
 class MainPage extends Component {
   render() {

@@ -34,7 +34,7 @@ class ContactPage extends Component {
               <Card className="contact-card">
                 <img src="/img/phone.svg" alt="phone-icon" />
                 <p className="lead text-center">
-                  You can call us here:<br/><a href="tel:630-833-6777">(630) 833-6777</a>
+                  You can call us here:<br/><a href="tel:630-833-6777" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '630-833-6777', 0);">(630) 833-6777</a>
                 </p>
               </Card>
             </Col>

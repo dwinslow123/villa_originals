@@ -16,7 +16,7 @@ export const Footer = () => {
       <a className="social-logo" href="https://facebook.com/villa_originals">
         <FontAwesomeIcon
           icon={['fab', 'facebook']}
-          size="3x"
+          size="2x"
           inverse
         />
       </a>
@@ -25,7 +25,7 @@ export const Footer = () => {
       <a className="social-logo" href="https://instagram.com/villa_originals">
         <FontAwesomeIcon
           icon={['fab', 'instagram']}
-          size="3x"
+          size="2x"
           inverse
         />
       </a>
