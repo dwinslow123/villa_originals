@@ -7,16 +7,25 @@ import {
   CardImg, } from 'reactstrap';
 
 import '../css/styles.css';
+import ReactGA from 'react-ga';
+
 
 class ContactPage extends Component {
-
+  
   mapSelector = () => {
     if ((navigator.platform.indexOf("iPhone") !== -1) ||
-        (navigator.platform.indexOf("iPad") !== -1) ||
-        (navigator.platform.indexOf("iPod") !== -1)) {
+    (navigator.platform.indexOf("iPad") !== -1) ||
+    (navigator.platform.indexOf("iPod") !== -1)) {
       window.open("maps://www.google.com/maps/place/26+S+Villa+Ave,+Villa+Park,+IL+60181/@41.8891481,-87.9720645,17z/data=!3m1!4b1!4m5!3m4!1s0x880e4cd90ba946fd:0xaca2ef0eb8bb9c27!8m2!3d41.8891441!4d-87.9698705");
-        }
+    }
   }
+  
+  phoneClick = () => {
+    ReactGA.event({
+      category: 'Phone Click',
+      action: 'click'
+    });
+  };
 
   render() {
     return (
@@ -34,7 +43,7 @@ class ContactPage extends Component {
               <Card className="contact-card">
                 <img src="/img/phone.svg" alt="phone-icon" />
                 <p className="lead text-center">
-                  You can call us here:<br/><a href="tel:630-833-6777" onclick="ga('send', 'event', 'Phone Call Tracking', 'Click to Call', '630-833-6777', 0);">(630) 833-6777</a>
+                  You can call us here:<br/><a href="tel:630-833-6777" onclick={ this.phoneClick }>(630) 833-6777</a>
                 </p>
               </Card>
             </Col>
