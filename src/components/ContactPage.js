@@ -7,6 +7,7 @@ import {
   CardImg, } from 'reactstrap';
 
 import '../css/styles.css';
+
 import ReactGA from 'react-ga';
 
 
@@ -33,7 +34,6 @@ class ContactPage extends Component {
           <Row className="contact">
             <Col sm="3" className="contact-column">
               <Card className="contact-card">
-                <CardImg top src="/img/map-marker.svg" alt="map-icon" />
                 <p className="lead text-center">
                   We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
                 </p>
@@ -41,7 +41,6 @@ class ContactPage extends Component {
             </Col>
             <Col sm="3" className="contact-column">
               <Card className="contact-card">
-                <img src="/img/phone.svg" alt="phone-icon" />
                 <p className="lead text-center">
                   You can call us here:<br/><a href="tel:630-833-6777" onclick={ this.phoneClick }>(630) 833-6777</a>
                 </p>
@@ -49,7 +48,6 @@ class ContactPage extends Component {
             </Col>
             <Col sm="3" className="contact-column text-center">
               <Card className="contact-card">
-                <img src="/img/envelope-closed.svg" alt="email-icon" />
                 <form method="post" action="mailto:dwinslow123@me.com">
                   <p className="lead text-center">Or just send us an email!</p>
                   <Button

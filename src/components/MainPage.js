@@ -24,6 +24,7 @@ class MainPage extends Component {
             It's the type of salon and friendly atmosphere <span className="cheers">"Where everybody knows your name"</span> and we look forward to meeting you!</p>
           </Container>
         </Jumbotron>
+        {/* <ContactPage /> */}
       </div>
     );
   }

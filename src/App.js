@@ -12,10 +12,10 @@ function initializeReactGA() {
 class App extends Component {
   render() {
     return (
-      <div className="main-app">
+      // <div className="main-app">
         <MainPage />
-        {/* <ContactPage /> */}
-      </div>
+        // {/* <ContactPage /> */}
+      // </div>
     );
   }
 }
