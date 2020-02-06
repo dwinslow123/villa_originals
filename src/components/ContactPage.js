@@ -4,7 +4,8 @@ import {
   Row,
   Col,
   Card,
-  CardImg, } from 'reactstrap';
+  CardImg,
+  Jumbotron, } from 'reactstrap';
 
 import '../css/styles.css';
 
@@ -31,23 +32,26 @@ class ContactPage extends Component {
   render() {
     return (
       <div className="contact-main">
+        <Jumbotron className="contact-jumbo">
+          <h2>Contact Us</h2>
+        </Jumbotron>
           <Row className="contact">
             <Col sm="3" className="contact-column">
-              <Card className="contact-card">
+              <div className="contact-card">
                 <p className="lead text-center">
                   We are located at:<address><a href="https://goo.gl/maps/9iYz4N7VCus" onClick={ this.mapSelector }>26 S. Villa Ave<br/>Villa Park, IL 60181</a></address>
                 </p>
-              </Card>
+              </div>
             </Col>
             <Col sm="3" className="contact-column">
-              <Card className="contact-card">
+              <div className="contact-card">
                 <p className="lead text-center">
                   You can call us here:<br/><a href="tel:630-833-6777" onclick={ this.phoneClick }>(630) 833-6777</a>
                 </p>
-              </Card>
+              </div>
             </Col>
             <Col sm="3" className="contact-column text-center">
-              <Card className="contact-card">
+              <div className="contact-card">
                 <form method="post" action="mailto:dwinslow123@me.com">
                   <p className="lead text-center">Or just send us an email!</p>
                   <Button
@@ -55,10 +59,10 @@ class ContactPage extends Component {
                     value="Send Email"
                     color="info"
                   >
-                    Let us know!
+                    Email Us!
                   </Button>
                 </form>
-              </Card>
+              </div>
             </Col>
           </Row>
       </div>
