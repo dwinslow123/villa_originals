@@ -226,7 +226,8 @@ CONTACT
         @media (max-width: 468px) {
           .contact-main .contact .contact-column .contact-card {
             height: auto;
-            width: auto; } }
+            width: auto;
+            overflow-y: auto; } }
 
 /************************************************
 PORTFOLIO

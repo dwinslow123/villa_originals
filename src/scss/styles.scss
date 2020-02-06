@@ -330,6 +330,7 @@ CONTACT
         @include media($mobile) {
           height: auto;
           width: auto;
+          overflow-y: auto;
         }
       } // contact-main contact contact-column contact-card
     } // contact-main contact contact-column
