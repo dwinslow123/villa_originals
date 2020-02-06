@@ -326,8 +326,12 @@ CONTACT
         address {
           margin: 0;
           padding: 0;
+        } // contact-main contact contact-column contact-card address
+        @include media($mobile) {
+          height: auto;
+          width: auto;
         }
-      } // contact-main contact contact-column
+      } // contact-main contact contact-column contact-card
     } // contact-main contact contact-column
   } // contact-main contact
 } // contact-main
