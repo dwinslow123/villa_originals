@@ -41,9 +41,10 @@ html {
 .main-app {
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
 }
 
-body, #root {
+body {
   height: 100%;
   width: 100%;
   font-family: $font-family-sans-serif;
@@ -52,6 +53,47 @@ body, #root {
   flex-direction: column;
   margin: 0;
   background: #FEFEFE;
+}
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: $font-family-sans-serif;
+  color: $mirage;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: #FEFEFE;
+
+  /************************************************
+FOOTER
+************************************************/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  // position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  .social-logo {
+    text-decoration: none;      
+    width: 4rem;
+    height: 4rem;
+    margin: 0 1.25rem;
+  }// footer social-logo
+
+  .social-logo:hover {
+    opacity: 0.5;
+  }
+}// footer
+
+
+}
+
+@include media($mobile) {
+  min-height: 100%;
+  height: auto;
 }
 
 .App {
@@ -295,6 +337,10 @@ CONTACT
   background: #fff;
   align-items: center;
 
+  @include media($mobile) {
+    overflow-y: scroll;
+  }
+
   .contact-jumbo {
     display: block;
     width: 100%;
@@ -313,6 +359,10 @@ CONTACT
       margin: 2.5rem 0;
       padding: 0 !important;
 
+      @include media($mobile) {
+        // margin: .25rem; 
+      }
+
       .contact-card {
         display: flex;
         height: 11.375rem;
@@ -330,7 +380,8 @@ CONTACT
         @include media($mobile) {
           height: auto;
           width: auto;
-          overflow-y: auto;
+          overflow-y: scroll;
+          // padding: .5rem;
         }
       } // contact-main contact contact-column contact-card
     } // contact-main contact contact-column
@@ -355,24 +406,4 @@ PORTFOLIO
     }
   }
 }
-
-/************************************************
-FOOTER
-************************************************/
-
-.footer {
-  display: flex;
-  justify-content: center;
-
-  .social-logo {
-    text-decoration: none;      
-    width: 4rem;
-    height: 4rem;
-    margin: 0 1.25rem;
-  }// footer social-logo
-
-  .social-logo:hover {
-    opacity: 0.5;
-  }
-}// footer
 
