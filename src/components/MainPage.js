@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ContactPage from './ContactPage';
+import CovidModal from './Modal';
 import '../css/styles.css';
 
 import {
@@ -22,6 +23,7 @@ class MainPage extends Component {
             <hr className="my-2" />
             <p className="lead">Our customers are like family to us, and we enjoy listening to them and giving them quality service and style.
             It's the type of salon and friendly atmosphere <span className="cheers">"Where everybody knows your name"</span> and we look forward to meeting you!</p>
+        <CovidModal buttonLabel={ "See our message regarding COVID-19" }/>
           </Container>
         </Jumbotron>
         {/* <ContactPage /> */}
