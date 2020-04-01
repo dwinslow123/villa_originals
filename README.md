@@ -1,1 +1,1 @@
-A local hair salon in Villa Park, IL.
+A local hair salon in Villa Park, IL
