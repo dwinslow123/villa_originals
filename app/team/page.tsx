@@ -11,25 +11,25 @@ const TeamPage = () => {
         {
             id: 2,
             name: 'John Smith',
-            description: 'Makeup Artist',
+            description: 'Hair Stylist',
             photo: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/person_placeholder.jpeg',
         },
         {
             id: 3,
             name: 'Emily Johnson',
-            description: 'Nail Technician',
+            description: 'Hair Stylist',
             photo: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/person_placeholder.jpeg',
         },
         {
             id: 4,
             name: 'Michael Brown',
-            description: 'Massage Therapist',
+            description: 'Hair Stylist',
             photo: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/person_placeholder.jpeg',
         },
         {
             id: 5,
             name: 'Sarah Wilson',
-            description: 'Esthetician',
+            description: 'Hair Stylist',
             photo: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/person_placeholder.jpeg',
         },
         // Add more stylist objects as needed
