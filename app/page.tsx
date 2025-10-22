@@ -13,8 +13,8 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col">
-      <div className="flex items-center flex-col-reverse md:flex-row justify-between gap-8">
+    <main className="flex flex-col h-auto">
+      <div className="flex items-center flex-col-reverse lg:flex-row justify-between lg:mb-0 gap-8 mb-12">
         <section className="text-center w-full">
           <p className="max-w-xl mx-auto mt-2 font-semi-bold text-gray-600 text-xl">
             Our customers are like family to us, and we enjoy listening to them and giving them quality service and style. <br />It's the type of salon and friendly atmosphere "Where everybody knows your name" and we look forward to meeting you!
