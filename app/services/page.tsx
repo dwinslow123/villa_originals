@@ -12,6 +12,7 @@ const ServicesPage = () => {
                         <li>Haircut no blowdry</li>
                         <li>Haircut with blowdry</li>
                         <li>Haircut, Touchup and blowdry</li>
+                        <li>Kids Cut</li>
                         <li>Blowouts</li>
                         <li>Blowout and curls</li>
                         <li>Updos</li>
@@ -26,8 +27,6 @@ const ServicesPage = () => {
                     </p>
                     <ul className="mt-10 text-gray-700 list-disc list-inside">
                         <li>Highlights</li>
-                        <li>Balayage</li>
-                        <li>Ombre</li>
                         <li>Full Color</li>
                         <li>Color Correction</li>
                     </ul>
@@ -40,8 +39,9 @@ const ServicesPage = () => {
                     </p>
                     <ul className="mt-10 text-gray-700 list-disc list-inside">
                         <li>Deep Conditioning</li>
-                        <li>Keratin Treatments</li>
-                        <li>Scalp Treatments</li>
+                        <li>Bleach and Tone</li>
+                        <li>Wax Brows</li>
+                        <li>Wax Lips</li>
                     </ul>
                 </section>
             </div>
