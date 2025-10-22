@@ -1,5 +1,6 @@
 import { Delius_Swash_Caps } from "next/font/google";
 import Nav from '@/app/components/Nav';
+import Footer from '@/app/components/Footer';
 import './globals.css';
 
 const deliusSwashCaps = Delius_Swash_Caps({
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${deliusSwashCaps.className} min-h-screen bg-white text-gray-900 grid grid-rows-[auto_1fr]`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -33,11 +33,6 @@ export default function Home() {
       <div className="text-center bg-gray-900 p-6 hidden md:block">
         <HairGallery />
       </div>
-      <footer id="footer" className="bg-gray-800 text-white p-6">
-        <div className="container mx-auto text-center">
-          <p>&copy; {new Date().getFullYear()} Villa Originals. All rights reserved.</p>
-        </div>
-      </footer>
     </main>
   );
 }
