@@ -1,4 +1,5 @@
 import { Delius_Swash_Caps } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 import Nav from '@/app/components/Nav';
 import Footer from '@/app/components/Footer';
 import './globals.css';
@@ -20,6 +21,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
