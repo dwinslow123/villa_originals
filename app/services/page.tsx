@@ -35,7 +35,7 @@ const ServicesPage = () => {
                 <section className="mb-12">
                     <h2 className="text-2xl font-semibold">Special Treatments</h2>
                     <p className="text-gray-700 mb-12 italic">
-                        Treat your hair to our special treatments including deep conditioning, keratin treatments, and scalp treatments designed to nourish and revitalize your hair.
+                        Treat your hair to our special treatments including deep conditioning and scalp treatments designed to nourish and revitalize your hair.
                     </p>
                     <ul className="mt-10 text-gray-700 list-disc list-inside">
                         <li>Deep Conditioning</li>

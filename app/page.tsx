@@ -19,7 +19,7 @@ export default function Home() {
           <p className="max-w-xl mx-auto mt-2 font-semi-bold text-gray-600 text-xl">
             Our customers are like family to us, and we enjoy listening to them and giving them quality service and style. <br />It's the type of salon and friendly atmosphere "Where everybody knows your name" and we look forward to meeting you!
           </p>
-          <button onClick={() => scrollToFooter('footer')} className="mt-6 px-6 py-3 border-2 border-gray-800 bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition">Get In Touch</button>
+          <button onClick={() => scrollToFooter('footer')} className="mt-6 px-6 py-3 border-2 border-gray-800 bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>
         </section>
         <section className="h-full text-center w-full">
           <Image
