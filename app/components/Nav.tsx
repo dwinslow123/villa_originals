@@ -21,6 +21,9 @@ const Nav = () => {
                 <li className="hover:text-gray-900">
                     <Link href="/team">Team</Link>
                 </li>
+                <li className="hover:text-gray-900">
+                    <Link href="/contact">Contact</Link>
+                </li>
             </ul>
         </nav>
     );

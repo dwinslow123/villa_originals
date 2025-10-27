@@ -18,13 +18,13 @@ const Footer = () => {
                     Villa Originals
                 </h2>
                 <div className="flex space-x-4 justify-center mt-4">
-                    <a href="https://instagram.com/villaoriginals" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center space-x-2">
+                    <a href="https://instagram.com/villa_originals" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center space-x-2">
                         <Instagram width={20} height={20} className="fill-current" />
                         <p>
                             Follow us on Instagram
                         </p>
                     </a>
-                    <a href="https://facebook.com/villaoriginals" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center space-x-2">
+                    <a href="https://facebook.com/VillaOriginals" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 flex items-center space-x-2">
                         <Facebook width={20} height={20} className="fill-current" />
                         <p>
                             Follow us on Facebook
