@@ -6,6 +6,7 @@ const pacifico = Pacifico({
     weight: [ '400' ],
 });
 
+/** Main Nav Component */
 const Nav = () => {
 
     return (

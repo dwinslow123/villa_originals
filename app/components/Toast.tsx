@@ -1,6 +1,8 @@
+import { ToastProps } from '@/app/lib/definitions';
 import X from '@/public/x.svg';
 
-const Toast = ({ message, close, type }: { message: string[] | string; close: () => void; type: 'success' | 'error' }) => {
+/** Toast Component to display error or success messages */
+const Toast = ({ message, close, type }: ToastProps) => {
     return (
         <div className={`${type === 'error' ? 'bg-red-500' : 'bg-green-500'} fixed flex justify-center z-50 w-10/12 mx-auto rounded-lg overflow-hidden shadow-lg top-4 left-1/2 transform -translate-x-1/2`}>
             <div className={`$ text-white w-full grow px-4 py-2`}>

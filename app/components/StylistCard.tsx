@@ -1,4 +1,7 @@
-const StylistCard = ({ stylist }) => {
+import { Stylist } from '@/app/lib/definitions';
+
+/** StylistCard Component to display stylist information */
+const StylistCard = ({ stylist }: { stylist: Stylist }) => {
     return (
         <div className="bg-gray-100 shadow-md rounded-lg p-6 text-center">
             <img

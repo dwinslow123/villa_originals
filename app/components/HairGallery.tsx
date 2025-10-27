@@ -1,13 +1,15 @@
 import Image from 'next/image';
+import constants from '@/app/lib/constants';
 
+/** HairGallery Component to display a gallery of hair styles */
 const HairGallery = () => {
     const images = [
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
-        "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
+        constants.GALLERY_PLACEHOLDER_URL,
+        constants.GALLERY_PLACEHOLDER_URL,
+        constants.GALLERY_PLACEHOLDER_URL,
+        constants.GALLERY_PLACEHOLDER_URL,
+        constants.GALLERY_PLACEHOLDER_URL,
+        constants.GALLERY_PLACEHOLDER_URL,
     ];
 
     return (
