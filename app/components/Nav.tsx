@@ -10,7 +10,7 @@ const pacifico = Pacifico({
 const Nav = () => {
 
     return (
-        <nav className="flex flex-col md:flex-row items-center p-8 border-b border-gray-200 w-full max-w-7xl mx-auto justify-between gap-8">
+        <nav className="flex flex-col md:flex-row items-center p-8 border-b border-gray-200 w-full justify-between gap-8">
             <h1 className={`${pacifico.className} text-3xl font-bold mb-4 sm:mb-0`}>
                 <Link href="/">Villa Originals</Link>
             </h1>
