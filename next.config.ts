@@ -16,7 +16,11 @@ const nextConfig: NextConfig = {
         as: '*.js',
       }
     }
-  }
+  },
+  allowedDevOrigins: [
+    'http://localhost:3000',
+    'http://192.168.86.203:3000'
+  ]
 };
 
 export default nextConfig;

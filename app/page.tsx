@@ -3,21 +3,25 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HairGallery from '@/app/components/HairGallery';
 import constants from '@/app/lib/constants';
+
 export default function Home() {
   const heroImageUrl = constants.HERO_IMAGE_URL;
 
   return (
-    <main className="flex flex-col h-auto">
-      <div className="flex items-center flex-col-reverse lg:flex-row justify-between lg:mb-0 gap-8 mb-12">
+    <main className="flex flex-col h-auto w-full">
+      <div className="flex w-full items-center flex-col-reverse lg:flex-row justify-between lg:mb-0 gap-8 mb-12">
         <section className="text-center w-full">
-          <p className="max-w-xl mx-auto mt-2 font-semi-bold text-gray-600 text-xl">
-            {constants.WELCOME_COPY}
+          <p className="max-w-xl mx-auto mt-2 font-semi-bold text-gray-600 text-xl leading-8">
+            {constants.WELCOME_COPY_TOP}
+          </p>
+          <p className="max-w-xl mx-auto mt-4 font-semi-bold text-gray-600 text-xl leading-8">
+            {constants.WELCOME_COPY_BOTTOM}
           </p>
           <Link href="/contact">
             <button className="mt-6 px-6 py-3 border-2 border-gray-800 bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>
           </Link>
         </section>
-        <section className="h-full text-center w-full">
+        <section className="h-full text-center w-full max-w-2xl">
           <Image
             src={heroImageUrl}
             alt="Salon Image"

@@ -7,7 +7,8 @@ interface Constants {
     FACEBOOK_URL: string;
     PHONE_NUMBER: string;
     ADDRESS: string;
-    WELCOME_COPY: string;
+    WELCOME_COPY_TOP: string;
+    WELCOME_COPY_BOTTOM: string;
 }
 
 const constants: Constants = {
@@ -19,7 +20,8 @@ const constants: Constants = {
     FACEBOOK_URL: 'https://facebook.com/VillaOriginals',
     PHONE_NUMBER: '(630) 833-6777',
     ADDRESS: '26 South Villa Avenue, Villa Park IL, 60181',
-    WELCOME_COPY: "Our customers are like family to us, and we enjoy listening to them and giving them quality service and style. It's the type of salon and friendly atmosphere 'Where everybody knows your name' and we look forward to meeting you!",
+    WELCOME_COPY_TOP: "Our customers are like family to us, and we enjoy listening to them and giving them quality service and style.",
+    WELCOME_COPY_BOTTOM: " It's the type of salon and friendly atmosphere 'Where everybody knows your name' and we look forward to meeting you!"
 }
 
 export default constants;

@@ -1,5 +1,6 @@
 import { Delius_Swash_Caps } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
+import { Viewport } from 'next';
 import Nav from '@/app/components/Nav';
 import Footer from '@/app/components/Footer';
 import './globals.css';
@@ -10,14 +11,21 @@ const deliusSwashCaps = Delius_Swash_Caps({
   subsets: [ 'latin' ],
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${deliusSwashCaps.className} min-h-screen bg-white text-gray-900 grid grid-rows-[auto_1fr]`}>
+    <html lang="en" className="w-full h-full">
+      <body className={`${deliusSwashCaps.className} min-h-screen bg-white max-w-screen w-full text-gray-900 grid grid-rows-[auto_1fr]`}>
         <Nav />
         {children}
         <Footer />
