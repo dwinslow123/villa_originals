@@ -1,4 +1,5 @@
 interface Constants {
+    CONTACT_PAGE_URL: string;
     SITE_NAME: string;
     GALLERY_1_URL: string;
     GALLERY_2_URL: string;
@@ -17,6 +18,7 @@ interface Constants {
 }
 
 const constants: Constants = {
+    CONTACT_PAGE_URL: '/contact',
     SITE_NAME: 'Villa Originals Salon',
     GALLERY_1_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
     GALLERY_2_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_2.jpg",

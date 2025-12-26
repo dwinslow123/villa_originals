@@ -34,7 +34,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <div className="flex flex-col space-y-2 text-center md:text-left">
+            <div id="footer-contact" className="flex flex-col space-y-2 text-center md:text-left">
                 <p className="flex items-center space-x-2">
                     <Phone width={24} height={24} className="fill-white" />
                     <a href={`tel:${constants.PHONE_NUMBER.replace(/\D/g, '')}`} className="hover:text-gray-400">{constants.PHONE_NUMBER}</a>
