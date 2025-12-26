@@ -7,6 +7,13 @@ import constants from '@/app/lib/constants';
 export default function Home() {
   const heroImageUrl = constants.HERO_IMAGE_URL;
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('footer-contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <main className="flex flex-col h-auto w-full">
       <div className="flex w-full items-center flex-col-reverse lg:flex-row justify-between lg:mb-0 gap-8 mb-12">
@@ -17,9 +24,11 @@ export default function Home() {
           <p className="max-w-xl mx-auto mt-4 font-semi-bold text-gray-600 text-xl leading-8">
             {constants.WELCOME_COPY_BOTTOM}
           </p>
-          <Link href="/contact">
-            <button className="mt-6 px-6 py-3 border-2 border-gray-800 bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>
-          </Link>
+          {/* Until approved content is recieved, the contact button will scroll to the contact section */}
+          {process.env.NODE_ENV !== 'production' ? <Link href={constants.CONTACT_PAGE_URL}>
+            <button className="mt-6 px-6 py-3 border-2 border-gray-800 scroll-smooth bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>
+          </Link> :
+            <button onClick={scrollToContact} className="mt-6 px-6 py-3 border-2 border-gray-800 scroll-smooth bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>}
         </section>
         <section className="h-full text-center w-full">
           <Image
