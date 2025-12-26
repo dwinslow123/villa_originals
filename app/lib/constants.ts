@@ -1,6 +1,11 @@
 interface Constants {
     SITE_NAME: string;
-    GALLERY_PLACEHOLDER_URL: string;
+    GALLERY_1_URL: string;
+    GALLERY_2_URL: string;
+    GALLERY_3_URL: string;
+    GALLERY_4_URL: string;
+    GALLERY_5_URL: string;
+    GALLERY_6_URL: string;
     HERO_IMAGE_URL: string;
     DEFAULT_PROFILE_PICTURE: string;
     INSTAGRAM_URL: string;
@@ -13,7 +18,12 @@ interface Constants {
 
 const constants: Constants = {
     SITE_NAME: 'Villa Originals Salon',
-    GALLERY_PLACEHOLDER_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
+    GALLERY_1_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_placeholder.jpg",
+    GALLERY_2_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_2.jpg",
+    GALLERY_3_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_3.jpg",
+    GALLERY_4_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_4.jpg",
+    GALLERY_5_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_5.jpg",
+    GALLERY_6_URL: "https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/gallery_6.jpg",
     HERO_IMAGE_URL: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/placeholder_hero.jpeg',
     DEFAULT_PROFILE_PICTURE: 'https://g5gi6ozjbngbtteo.public.blob.vercel-storage.com/villa_originals/default_profile.jpg',
     INSTAGRAM_URL: 'https://instagram.com/villa_originals',
