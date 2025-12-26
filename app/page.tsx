@@ -21,7 +21,7 @@ export default function Home() {
             <button className="mt-6 px-6 py-3 border-2 border-gray-800 bg-white text-gray-800 font-semibold hover:bg-gray-800 hover:text-white transition hidden lg:inline-block">Get In Touch</button>
           </Link>
         </section>
-        <section className="h-full text-center w-full max-w-2xl">
+        <section className="h-full text-center w-full">
           <Image
             src={heroImageUrl}
             alt="Salon Image"

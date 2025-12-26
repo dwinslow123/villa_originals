@@ -44,8 +44,8 @@ const Footer = () => {
                     <span>{constants.ADDRESS}</span>
                 </p>
             </div>
-            <p className="lg:border-0 lg:w-auto text-center lg:text-right border-t border-gray-700 pt-4 w-2/3">&copy; {new Date().getFullYear()} Villa Originals. All rights reserved.</p>
-        </footer >
+            <p className="text-center lg:text-right">Built with love by <a className="underline" href="https://joywin.digital">JoyWin Digital</a></p>
+        </footer>
     );
 };
 
